@@ -1,0 +1,95 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-image: url('mac.png');
+    /*background-color: cadetblue;*/
+}
+.calc{
+    width: 253px;
+    height: 355px;
+    background-color: darkgrey;
+    border: 1px solid black;
+    border-radius: 4px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.295);
+    
+}
+.total{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.principal{
+    width: 253px;
+    height: 75px;
+    float: left;
+    background-color: rgb(80, 80, 80);
+    border-bottom: 1px solid black;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input:focus, textarea:focus, select:focus{
+    outline: none;
+}
+input{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-size: 30px;
+    text-align: right;
+    width: 230px;
+    height: 60px;
+    float: right;
+    background-color: transparent;
+    text-decoration: none;
+    border: 0;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type=number] { -moz-appearance:textfield; }
+.f{
+    height: 55px;
+    width: 62.5px;
+    float: left;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.del, .masmenos, .percent{
+    background-color: dimgray;
+}
+.seven, .eight, .nine, .four, .five, .six, .one, .two, .three, .zero, .point{
+    background-color: gray;
+}
+.divided, .multipl, .menos, .plus, .equal{
+    background-color: orange;
+}
+.point{
+    height: 55px;
+    width: 62.5px;
+    float: left;
+}
+.zero{
+    height: 55px;
+    width: 126px;
+    float: left;
+    border-bottom-left-radius: 4px;
+}
+.equal{
+    border-bottom-right-radius: 4px;
+}
+.del, .masmenos, .percent, .seven, .eight, .nine, .four, .five, .six, .one, .two, .three, .zero, .point{
+    border-right: 1px solid black;
+}
+p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-size: 22px;
+}
