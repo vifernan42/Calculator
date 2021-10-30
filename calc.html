@@ -1,77 +1,89 @@
+<!-- *********************************************************************** -->
+<!--                                                                         -->
+<!--                                                      :::      ::::::::  -->
+<!-- calc.html                                          :+:      :+:    :+:  -->
+<!--                                                  +:+ +:+         +:+    -->
+<!-- By: vifernan <vifernan@42.fr>                  +#+  +:+       +#+       -->
+<!--                                              +#+#+#+#+#+   +#+          -->
+<!-- Created: 2021/10/30 23:59:38 by vifernan          #+#    #+#            -->
+<!-- Updated: 2021/10/30 23:59:48 by vifernan         ###   ########.fr      -->
+<!--                                                                         -->
+<!-- *********************************************************************** -->
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="calc.css">
-	<script src="calc.js"></script>
-    <title>Calculator</title>
-</head>
-<body>
-    <div class="total">
-        <div class="calc">
-            <div class="principal">
-                <input type="number" name="" id="principal">
-            </div>
-            <div class="f del" onclick="del()">
-                <p>C</p>
-            </div>
-            <div class="f masmenos">
-                <p>+/-</p>
-            </div>
-            <div class="f percent">
-                <p>%</p>
-            </div>
-            <div class="f divided">
-                <p>&#247</p>
-            </div>
-            <div class="f seven" onclick="principal(7)">
-                <p>7</p>
-            </div>
-            <div class="f eight" onclick="principal(8)">
-                <p>8</p>
-            </div>
-            <div class="f nine" onclick="principal(9)">
-                <p>9</p>
-            </div>
-            <div class="f multipl" onclick="multi(1)" >
-                <p>&#215</p>
-            </div>
-            <div class="f four" onclick="principal(4)">
-                <p>4</p>
-            </div>
-            <div class="f five" onclick="principal(5)">
-                <p>5</p>
-            </div>
-            <div class="f six" onclick="principal(6)">
-                <p>6</p>
-            </div>
-            <div class="f menos">
-                <p>&#8722</p>
-            </div>
-            <div class="f one" onclick="principal(1)">
-                <p>1</p>
-            </div>
-            <div class="f two" onclick="principal(2)">
-                <p>2</p>
-            </div>
-            <div class="f three" onclick="principal(3)">
-                <p>3</p>
-            </div>
-            <div class="f plus">
-                <p>+</p>
-            </div>
-            <div class="f zero">
-                <p>0</p>
-            </div>
-            <div class="f point" onclick="">
-                <p>.</p>
-            </div>
-            <div class="f equal" onclick="equal()">
-                <p>=</p>
-            </div>
-        </div>
-    </div>
-</body>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="stylesheet" href="calc.css">
+		<script src="calc.js"></script>
+		<title>Calculator</title>
+	</head>
+	<body onload="del()">
+		<div class="total">
+			<div class="calc">
+				<div class="principal">
+					<input type="number" name="" id="principal">
+				</div>
+				<div class="f del" onclick="del()">
+					<p>C</p>
+				</div>
+				<div class="f masmenos">
+					<p>+/-</p>
+				</div>
+				<div class="f percent">
+					<p>%</p>
+				</div>
+				<div class="f divided" onclick="divi(1)">
+					<p>&#247</p>
+				</div>
+				<div class="f seven" onclick="principal(7)">
+					<p>7</p>
+				</div>
+				<div class="f eight" onclick="principal(8)">
+					<p>8</p>
+				</div>
+				<div class="f nine" onclick="principal(9)">
+					<p>9</p>
+				</div>
+				<div class="f multipl" onclick="multi(1)" >
+					<p>&#215</p>
+				</div>
+				<div class="f four" onclick="principal(4)">
+					<p>4</p>
+				</div>
+				<div class="f five" onclick="principal(5)">
+					<p>5</p>
+				</div>
+				<div class="f six" onclick="principal(6)">
+					<p>6</p>
+				</div>
+				<div class="f menos" onclick="menus(0)">
+					<p>&#8722</p>
+				</div>
+				<div class="f one" onclick="principal(1)">
+					<p>1</p>
+				</div>
+				<div class="f two" onclick="principal(2)">
+					<p>2</p>
+				</div>
+				<div class="f three" onclick="principal(3)">
+					<p>3</p>
+				</div>
+				<div class="f plus" onclick="plus(0)">
+					<p>+</p>
+				</div>
+				<div class="f zero">
+					<p>0</p>
+				</div>
+				<div class="f point" onclick="">
+					<p>.</p>
+				</div>
+				<div class="f equal" onclick="equal()">
+					<p>=</p>
+				</div>
+			</div>
+		</div>
+	</body>
 </html>
