@@ -6,7 +6,7 @@
 //   By: vifernan <vifernan@42.fr>                  +#+  +:+       +#+        //
 //                                                +#+#+#+#+#+   +#+           //
 //   Created: 2021/10/30 17:18:00 by vifernan          #+#    #+#             //
-//   Updated: 2021/10/30 23:55:05 by vifernan         ###   ########.fr       //
+//   Updated: 2021/10/31 00:25:50 by vifernan         ###   ########.fr       //
 //                                                                            //
 // ************************************************************************** //
 
@@ -20,7 +20,13 @@ var d = 0;
 var l = 0;
 var p = 0;
 var eq = 0;
- 
+
+function clicking()
+{
+	document.getElementsByClassName('drill_cursor')[0].addEventListener('click', function (event) {
+		document.getElementbyClassName("f").style.backgroundColor="blue";
+	});
+}
 function principal(value){
 	if (m > 0 || d > 0 || l > 0 || p > 0)
 	{
