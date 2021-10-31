@@ -3,6 +3,8 @@ html, body{
     padding: 0;
     height: 100%;
     background-image: url('mac.png');
+    background-position: 50% 50%;
+    background-size: 1920px 1200px;
     /*background-color: cadetblue;*/
 }
 .block {
@@ -58,7 +60,7 @@ input{
     color: white;
     font-size: 30px;
     text-align: right;
-	padding-right: 25px;
+	margin-right: 25px;
     width: 230px;
     height: 60px;
     float: right;
