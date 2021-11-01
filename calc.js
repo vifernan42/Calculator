@@ -121,7 +121,7 @@ function keyhook(e){
 		setTimeout("Color('botton_divi')", 90);
 		divi(1);
 	}
-	if (e.which == "Escape")
+	if (e.which === 27)
 	{
 		document.getElementById("botton_del").style.backgroundColor = "rgba(190, 190, 190, 0.678)";  
         setTimeout("Color('botton_del')", 90);
@@ -141,6 +141,11 @@ function Color(clr)
 } 
 
 function principal(value){
+	if (result && (m == 0 || d == 0 || l == 0 || p == 0 || per == 0))
+	{
+		result = 0;
+		global = 0;
+	}
 	console.log(document.getElementById("principal").value);
 	if (m > 0 || d > 0 || l > 0 || p > 0 || per > 0)
 	{
