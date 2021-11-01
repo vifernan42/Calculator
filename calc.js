@@ -23,7 +23,52 @@ var eq = 0;
 var po = 0;
 var per = 0;
 
+function keyhook(e){
+	//console.log(e.which);
+	if (e.which == 49)
+	{
+		principal(1);
+	}
+	if (e.which == 50)
+	{
+		principal(2);
+	}
+	if (e.which == 51)
+	{
+		principal(3);
+	}
+	if (e.which == 52)
+	{
+		principal(4);
+	}
+	if (e.which == 53)
+	{
+		principal(5);
+	}
+	if (e.which == 54)
+	{
+		principal(6);
+	}
+	if (e.which == 55)
+	{
+		principal(7);
+	}
+	if (e.which == 56)
+	{
+		principal(8);
+	}
+	if (e.which == 57)
+	{
+		principal(9);
+	}
+	if (e.which == 60)
+	{
+		principal(0);
+	}
+}
+
 function principal(value){
+	console.log(document.getElementById("principal").value);
 	if (m > 0 || d > 0 || l > 0 || p > 0 || per > 0)
 	{
 		if (flag2 != 0 && po == 0)
@@ -143,7 +188,7 @@ function multi(value){
 	po = 0;
 	per = 0;
 	m++;
-	if (m == 2)
+	if (m == 2) /* replica para todos los casos */
 	{
 		document.getElementById("principal").value = global2 * global;
 		m = 1;

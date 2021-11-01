@@ -20,10 +20,11 @@
 		<script src="calc.js"></script>
 		<title>Calculator</title>
 	</head>
-	<body onload="del()">
+	<body onload="del()" onkeypress="keyhook(event)">
 		<div class="total">
 			<div class="calc">
 				<div class="principal">
+					<!-- onkeypress="keyhook()" -->
 					<input type="text" name="" id="principal">
 				</div>
 				<div class="f del">
@@ -39,43 +40,43 @@
 					<button class="block" onclick="divi(1)">&#247</button>
 				</div>
 				<div class="f seven">
-					<button class="block" onclick="principal(7)">7</button>
+					<button class="block 7" onclick="principal(7)">7</button>
 				</div>
 				<div class="f eight">
-					<button class="block" onclick="principal(8)">8</button>
+					<button class="block 8" onclick="principal(8)">8</button>
 				</div>
 				<div class="f nine">
-					<button class="block" onclick="principal(9)">9</button>
+					<button class="block 9" onclick="principal(9)">9</button>
 				</div>
 				<div class="f multipl">
 					<button class="block" onclick="multi(1)">&#215</button>
 				</div>
 				<div class="f four">
-					<button class="block" onclick="principal(4)">4</button>
+					<button class="block 4" onclick="principal(4)">4</button>
 				</div>
 				<div class="f five">
-					<button class="block" onclick="principal(5)">5</button>
+					<button class="block 5" onclick="principal(5)">5</button>
 				</div>
 				<div class="f six">
-					<button class="block" class="block" onclick="principal(6)">6</button>
+					<button class="block 6" class="block" onclick="principal(6)">6</button>
 				</div>
 				<div class="f menos">
 					<button class="block" onclick="menus(0)">&#8722</button>
 				</div>
 				<div class="f one">
-					<button class="block" onclick="principal(1)">1</button>
+					<button class="block 1" onclick="principal(1)">1</button>
 				</div>
 				<div class="f two">
-					<button class="block" onclick="principal(2)">2</button>
+					<button class="block 2" onclick="principal(2)">2</button>
 				</div>
 				<div class="f three">
-					<button class="block" onclick="principal(3)">3</button>
+					<button class="block 3" onclick="principal(3)">3</button>
 				</div>
 				<div class="f plus">
 					<button class="block" onclick="plus(0)">+</button>
 				</div>
 				<div class="f zero">
-					<button class="block" onclick="principal(0)">0</button>
+					<button class="block 0" onclick="principal(0)">0</button>
 				</div>
 				<div class="f point">
 					<button class="block" onclick="point()">.</button>
