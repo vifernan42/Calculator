@@ -16,8 +16,8 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
-		<link rel="stylesheet" href="calc.css">
 		<script src="calc.js"></script>
+		<link rel="stylesheet" href="calc.css">
 		<title>Calculator</title>
 	</head>
 	<body onload="del()" onkeypress="keyhook(event)">
@@ -28,61 +28,61 @@
 					<input type="text" name="" id="principal">
 				</div>
 				<div class="f del">
-					<button class="block" onclick="del()">C</button>
+					<button class="block" id="botton_del" onclick="del()">C</button>
 				</div>
 				<div class="f masmenos">
 					<button class="block" onclick="masme(1)">+/-</button>
 				</div>
 				<div class="f percent">
-					<button class="block" onclick="perc(1)">%</button>
+					<button class="block" id="botton_percent" onclick="perc(1)">%</button>
 				</div>
 				<div class="f divided">
-					<button class="block" onclick="divi(1)">&#247</button>
+					<button class="block" id="botton_divi" onclick="divi(1)">&#247</button>
 				</div>
 				<div class="f seven">
-					<button class="block 7" onclick="principal(7)">7</button>
+					<button class="block 7" id="botton_7" onclick="principal(7)">7</button>
 				</div>
 				<div class="f eight">
-					<button class="block 8" onclick="principal(8)">8</button>
+					<button class="block 8" id="botton_8" onclick="principal(8)">8</button>
 				</div>
 				<div class="f nine">
-					<button class="block 9" onclick="principal(9)">9</button>
+					<button class="block 9" id="botton_9" onclick="principal(9)">9</button>
 				</div>
 				<div class="f multipl">
-					<button class="block" onclick="multi(1)">&#215</button>
+					<button class="block" id="botton_multi" onclick="multi(1)">&#215</button>
 				</div>
 				<div class="f four">
-					<button class="block 4" onclick="principal(4)">4</button>
+					<button class="block 4" id="botton_4" onclick="principal(4)">4</button>
 				</div>
 				<div class="f five">
-					<button class="block 5" onclick="principal(5)">5</button>
+					<button class="block 5" id="botton_5" onclick="principal(5)">5</button>
 				</div>
 				<div class="f six">
-					<button class="block 6" class="block" onclick="principal(6)">6</button>
+					<button class="block 6" id="botton_6" onclick="principal(6)">6</button>
 				</div>
 				<div class="f menos">
-					<button class="block" onclick="menus(0)">&#8722</button>
+					<button class="block" id="botton_menos" onclick="menus(0)">&#8722</button>
 				</div>
 				<div class="f one">
-					<button class="block 1" onclick="principal(1)">1</button>
+					<button class="block 1" id="botton_1" onclick="principal(1)">1</button>
 				</div>
 				<div class="f two">
-					<button class="block 2" onclick="principal(2)">2</button>
+					<button class="block 2" id="botton_2" onclick="principal(2)">2</button>
 				</div>
 				<div class="f three">
-					<button class="block 3" onclick="principal(3)">3</button>
+					<button class="block 3" id="botton_3" onclick="principal(3)">3</button>
 				</div>
 				<div class="f plus">
-					<button class="block" onclick="plus(0)">+</button>
+					<button class="block" id="botton_mas" onclick="plus(0)">+</button>
 				</div>
 				<div class="f zero">
-					<button class="block 0" onclick="principal(0)">0</button>
+					<button class="block 0" id="botton_0" onclick="principal(0)">0</button>
 				</div>
 				<div class="f point">
-					<button class="block" onclick="point()">.</button>
+					<button class="block" id="botton_point" onclick="point()">.</button>
 				</div>
 				<div class="f equal">
-					<button class="block" onclick="equal()">=</button>
+					<button class="block" id="botton_equal" onclick="equal()">=</button>
 				</div>
 			</div>
 		</div>

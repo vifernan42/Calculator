@@ -24,48 +24,121 @@ var po = 0;
 var per = 0;
 
 function keyhook(e){
-	//console.log(e.which);
+	console.log(e.which);
 	if (e.which == 49)
 	{
+		document.getElementById("botton_1").style.backgroundColor = "rgba(190, 190, 190, 0.678)";  
+        setTimeout("Color('botton_1')", 90);
 		principal(1);
 	}
 	if (e.which == 50)
 	{
+		document.getElementById("botton_2").style.backgroundColor = "rgba(190, 190, 190, 0.678)";  
+        setTimeout("Color('botton_2')", 90);
 		principal(2);
 	}
 	if (e.which == 51)
 	{
+		document.getElementById("botton_3").style.backgroundColor = "rgba(190, 190, 190, 0.678)";  
+        setTimeout("Color('botton_3')", 90);
 		principal(3);
 	}
 	if (e.which == 52)
 	{
+		document.getElementById("botton_4").style.backgroundColor = "rgba(190, 190, 190, 0.678)";  
+        setTimeout("Color('botton_4')", 90);
 		principal(4);
 	}
 	if (e.which == 53)
 	{
+		document.getElementById("botton_5").style.backgroundColor = "rgba(190, 190, 190, 0.678)";  
+        setTimeout("Color('botton_5')", 90);
 		principal(5);
 	}
 	if (e.which == 54)
 	{
+		document.getElementById("botton_6").style.backgroundColor = "rgba(190, 190, 190, 0.678)";  
+        setTimeout("Color('botton_6')", 90);
 		principal(6);
 	}
 	if (e.which == 55)
 	{
+		document.getElementById("botton_7").style.backgroundColor = "rgba(190, 190, 190, 0.678)";  
+        setTimeout("Color('botton_7')", 90);
 		principal(7);
 	}
 	if (e.which == 56)
 	{
+		document.getElementById("botton_8").style.backgroundColor = "rgba(190, 190, 190, 0.678)";  
+        setTimeout("Color('botton_8')", 90);
 		principal(8);
 	}
 	if (e.which == 57)
 	{
+		document.getElementById("botton_9").style.backgroundColor = "rgba(190, 190, 190, 0.678)";  
+        setTimeout("Color('botton_9')", 90);
 		principal(9);
 	}
-	if (e.which == 60)
+	if (e.which == 48)
 	{
+		document.getElementById("botton_0").style.backgroundColor = "rgba(190, 190, 190, 0.678)";  
+        setTimeout("Color('botton_0')", 90);
 		principal(0);
 	}
+	if (e.which == 43)
+	{
+		document.getElementById("botton_mas").style.backgroundColor = "rgba(190, 190, 190, 0.678)";  
+        setTimeout("Color('botton_mas')", 90);
+		plus(0);
+	}
+	if (e.which == 45)
+	{
+		document.getElementById("botton_menos").style.backgroundColor = "rgba(190, 190, 190, 0.678)";  
+        setTimeout("Color('botton_menos')", 90);
+		menus(0);
+	}
+	if (e.which == 37)
+	{
+		document.getElementById("botton_percent").style.backgroundColor = "rgba(190, 190, 190, 0.678)";  
+        setTimeout("Color('botton_percent')", 90);
+		perc(1);
+	}
+	if (e.which == 42)
+	{
+		document.getElementById("botton_multi").style.backgroundColor = "rgba(190, 190, 190, 0.678)";  
+        setTimeout("Color('botton_multi')", 90);
+		multi(1);
+	}
+	if (e.which == 46)
+	{
+		document.getElementById("botton_point").style.backgroundColor = "rgba(190, 190, 190, 0.678)";  
+		setTimeout("Color('botton_point')", 90);
+		point();
+	}
+	if (e.which == 47)
+	{
+		document.getElementById("botton_divi").style.backgroundColor = "rgba(190, 190, 190, 0.678)";  
+		setTimeout("Color('botton_divi')", 90);
+		divi(1);
+	}
+	if (e.which == "Escape")
+	{
+		document.getElementById("botton_del").style.backgroundColor = "rgba(190, 190, 190, 0.678)";  
+        setTimeout("Color('botton_del')", 90);
+		del();
+	}
+	if (e.which == 13)
+	{
+		document.getElementById("botton_equal").style.backgroundColor = "rgba(190, 190, 190, 0.678)";  
+        setTimeout("Color('botton_equal')", 90);
+		equal();
+	}
 }
+
+function Color(clr)   
+{  
+    document.getElementById(clr).style.backgroundColor = 'transparent';  
+} 
 
 function principal(value){
 	console.log(document.getElementById("principal").value);
